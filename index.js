@@ -5,8 +5,8 @@ const ClientUser = require ("discord.js");
 
 // Commandes
 
-  // BotCommand
-  const commandbot = require("./commandbot.js")
+  // Command
+  const command = require("./command.js")
 
 
 // Token + Prefix
