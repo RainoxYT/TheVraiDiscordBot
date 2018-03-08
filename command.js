@@ -41,5 +41,4 @@ if(command === "Créateur"){
     if (m<10) {m = "0" + m}
     var s=ladate.getSeconds();
     if (s<10) {s = "0" + s}
-    document.write(ladate.getDate()+"/"+(ladate.getMonth()+1)+"/"+ladate.getFullYear())    
 
