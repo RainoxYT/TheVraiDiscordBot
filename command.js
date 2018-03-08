@@ -15,7 +15,7 @@ client.on("message", async message => {
 
 // Commande
 if(command === "lel") {
-    console.log(`> ${message.auhtor.tag}`);
+    console.log(`${message.auhtor.tag}`);
     message.reply("Fils de Jul!");
 
 }});
