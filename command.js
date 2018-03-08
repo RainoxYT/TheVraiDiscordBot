@@ -14,7 +14,7 @@ client.on("message", async message => {
 
 // Commande
 if(command === "lel") {
-    console.log("[LOG] (" + " ( " + ladate.getDate() + " / " +( ladate.getMonth()+1 )  + " / " +ladate.getFullYear + h + m + s + ") " + ") > " + `${message.author.username}` + " à fais la commande lel");
+    console.log("[LOG] (" + h + " / " + m + " / " + " / " + s + " / " + ") > " + `${message.author.username}` + " à fais la commande lel");
     message.reply("卍 LE RAICH C'EST MAINTENANT 卍");
 
 if(command === "Créateur"){
