@@ -1,6 +1,8 @@
 const Discord = require("discord.js");
 const client = new Discord.Client();
 const ClientUser = require ("discord.js");
+const config = require("./config.json");
+
 
 if(command === "juif"){
 
