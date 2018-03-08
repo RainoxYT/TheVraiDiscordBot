@@ -1,17 +1,25 @@
+// Library
 const Discord = require("discord.js");
-const client = new Discord.Client();
-const ClientUser = require ("discord.js");
+const client = new Discord.Client(); 
+
+// Prefix + Token
 const config = require("./config.json");
 
+//Async
+client.on("message", async message => {
+  if(message.author.bot) return;
+  if(message.content.indexOf(config.prefix) !== 0) return;
+  const args = message.content.slice(config.prefix.length).trim().split(/ +/g);
+  const command = args.shift().toLowerCase();
 
-if(command === "juif"){
 
-    Message.reply("卍 LE RAICH C'EST MAINTENANT 卍");
+// Commande
+if(command === "lel") {
+    console.log("> " + `${message.auhtor.username}`)
+    message.reply("Fils de Jul!")
 
-}
+}});
 
-else if(command === "Créateur"){
 
-    Message.reply("Maître @Teyo's, vous m'avez créer...");
-
-}
+  // Configuration
+  client.login(config.token);
