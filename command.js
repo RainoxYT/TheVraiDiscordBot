@@ -15,7 +15,7 @@ client.on("message", async message => {
 
 // Commande
 if(command === "lel") {
-    console.log(`${message.author.username}`);
+    console.log("> " + `${message.author.username}`);
     message.reply("Fils de Jul!");
 
 }});
